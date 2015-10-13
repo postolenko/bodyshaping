@@ -1,1 +1,1 @@
-# https://postolenko.github.io/bodyshaping
+#https://postolenko.github.io/bodyshaping
