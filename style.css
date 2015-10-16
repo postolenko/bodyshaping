@@ -759,7 +759,7 @@ header {
 }
 
 .classes-list {
-	margin: 23px 0 0 0;
+	margin: 23px 0 0 22px;
 	/*border-left: 1px solid #e3b7c2;*/
 	/*border-right-width: 100px;*/
 	position: relative;
