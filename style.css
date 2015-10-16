@@ -599,9 +599,10 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	/*float: right;*/
-	position: absolute;
+	width: 55%;
+/*	position: absolute;
 	top: 0;
-	right: 0;	
+	right: 0;	*/
 	/*width: 50%;*/
 	/*width: auto;*/
 	height: 100%;
