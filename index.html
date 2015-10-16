@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/font-awesome.css">
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="js/slider.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
@@ -34,19 +35,23 @@
 			<ul class="left-nav">
 
 				<li>
-					<div class="link-parallelogram"><a class="left-nav-link">Home</a></div>
+					<div class="link-parallelogram"><a class="left-nav-link" href="#home">Home</a></div>
 				</li>
 
 				<li>
-					<div class="link-parallelogram"><a class="left-nav-link">About</a></div>
+					<div class="link-parallelogram"><a class="left-nav-link" href="#about">About</a></div>
 				</li>
 
 				<li>
-					<div class="link-parallelogram"><a class="left-nav-link">Classes</a></div>
+					<div class="link-parallelogram"><a class="left-nav-link" href="#classes">Classes</a></div>
 				</li>
 
 				<li>
-					<div class="link-parallelogram"><a class="left-nav-link">Packages</a></div>
+					<div class="link-parallelogram"><a class="left-nav-link" href="#packages">Packages</a></div>
+				</li>
+
+				<li class="contacts-link">
+					<div class="link-parallelogram"><a class="left-nav-link" href="#contacts">Contacts</a></div>
 				</li>
 				
 			</ul>
@@ -55,17 +60,21 @@
 
 				<div class="logo-parallelogram">
 
-					<a class="logo-img" href="/"></a>
+					<a class="logo-img" href="#home"></a>
 
 				</div>
 
 			</div>
 
-			<ul class="right-nav">
+			<!-- <ul class="right-nav"> -->
 
-				<li class=""><div class="link-parallelogram"><a class="right-nav-link">Contacts</a></div></li>
+				<!-- <li class=""> -->
+				<div class="right-nav">
+					<div class="link-parallelogram"><a class="right-nav-link" href="#contacts">Contacts</a></div>
+				</div>
+				<!-- </li> -->
 				
-			</ul>
+			<!-- </ul> -->
 
 			<ul class="lenguage-switch">
 
@@ -73,6 +82,10 @@
 				<li class="lenguage"><div class="leng-parallelogram"><a class="lenguage-switch-link">日本語</a></div></li>
 
 			</ul>
+
+			<div class="burger-icon-box">
+				<i class="glyphicon glyphicon-align-justify"></i>
+			</div>
 
 		</div>
 
@@ -83,7 +96,7 @@
 		<!-- Content -->
 			<div class="content">
 				
-			<section>
+			<section id="home">
 
 				<div class="get-slim-bg">
 
@@ -133,7 +146,7 @@
 
 			</section>
 
-			<section>
+			<section id="about">
 			
 				<div class="about-us-section">
 
@@ -169,7 +182,7 @@
 				
 			</section>
 
-			<section>
+			<section id="classes">
 
 				<div class="classes-section">
 
@@ -262,7 +275,7 @@
 
 			</section>
 
-			<section>
+			<section id="packages">
 				
 				<div class="packages-section">
 
@@ -354,7 +367,7 @@
 
 			</section>
 
-			<section>
+			<section id="contacts">
 
 				<div class="contants-section">
 
@@ -403,70 +416,72 @@
 						</div>
 						<div class="gift-box-shadow"></div>
 						<div class="triangle-border">
-							<div id="left-triangle"></div><div id="right-triangle"></div>
+							<div class="left-triangle"></div><div class="right-triangle"></div>
 						</div>
 
 						<div class="reviews-slider">
 
 							<h2 class="reviews-slider-head">What our clients say?</h2>
+
 							<div class="for-slider">
-							<div class="slides sl slide-1">
 
-								<p class="customer-review">I had the opportunity to have a few sessions with Erica and what I really enjoyed about her work out sessions was that they did not feel like a boring and mundane workout. She incorporated a great balance of aerobics and targeted exercises. The music she chose was fun and upbeat and it felt more like a dance session with your girlfriend in your living room, it was very fun! The targeted exercises were really good and she corrected your form and really encouraged you to work through the last few hard counts. I could definitely feel the burn and felt great at the end of our work out</p>
-								
-								<div class="customer">
+								<div class="slides sl slide-1">
 
-									<div class="customer-img-box">
+									<p class="customer-review">I had the opportunity to have a few sessions with Erica and what I really enjoyed about her work out sessions was that they did not feel like a boring and mundane workout. She incorporated a great balance of aerobics and targeted exercises. The music she chose was fun and upbeat and it felt more like a dance session with your girlfriend in your living room, it was very fun! The targeted exercises were really good and she corrected your form and really encouraged you to work through the last few hard counts. I could definitely feel the burn and felt great at the end of our work out</p>
+									
+									<div class="customer">
 
-										<img class="customer-img" src="img/customer.png" alt="customer photo">
+										<div class="customer-img-box">
+
+											<img class="customer-img" src="img/customer.png" alt="customer photo">
+
+										</div>
 
 									</div>
 
+									<p class="customer-name">Erica Underwood, Singapoire, 33 years</p>
+
 								</div>
 
-								<p class="customer-name">Erica Underwood, Singapoire, 33 years</p>
+
+								<div class="slides sl slide-2">
+
+									<p class="customer-review">SLIDE 2</p>
+									
+									<div class="customer">
+
+										<div class="customer-img-box">
+
+											<img class="customer-img" src="img/customer.png" alt="customer photo">
+
+										</div>
+
+									</div>
+
+									<p class="customer-name">Erica Underwood, Singapoire, 33 years</p>
+
+								</div>
+
+
+								<div class="slides sl slide-3">
+
+									<p class="customer-review">SLIDE 3</p>
+									
+									<div class="customer">
+
+										<div class="customer-img-box">
+
+											<img class="customer-img" src="img/customer.png" alt="customer photo">
+
+										</div>
+
+									</div>
+
+									<p class="customer-name">Erica Underwood, Singapoire, 33 years</p>
+
+								</div>							
 
 							</div>
-
-
-							<div class="slides sl slide-2">
-
-								<p class="customer-review">SLIDE 2</p>
-								
-								<div class="customer">
-
-									<div class="customer-img-box">
-
-										<img class="customer-img" src="img/customer.png" alt="customer photo">
-
-									</div>
-
-								</div>
-
-								<p class="customer-name">Erica Underwood, Singapoire, 33 years</p>
-
-							</div>
-
-
-							<div class="slides sl slide-3">
-
-								<p class="customer-review">SLIDE 3</p>
-								
-								<div class="customer">
-
-									<div class="customer-img-box">
-
-										<img class="customer-img" src="img/customer.png" alt="customer photo">
-
-									</div>
-
-								</div>
-
-								<p class="customer-name">Erica Underwood, Singapoire, 33 years</p>
-
-							</div>							
-
-						</div>
 
 						<div class="slider-numbers"></div>
 					</div>

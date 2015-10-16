@@ -215,12 +215,13 @@ header {
 .left-nav-link {
 	display: inline-block;
 	vertical-align: top;
+	color: #575656;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
 	font-weight: normal;
 	text-transform: uppercase;
-	padding: 8px 11%;
+	padding: 8px 8px;
 	cursor: pointer;
 	-webkit-transform: skew(10deg);
     -moz-transform: skew(10deg);
@@ -270,6 +271,10 @@ header {
     transform: skew(12deg);
 }
 
+.contacts-link .link-parallelogram {
+	display: none;
+}
+
 .right-nav {
 	display: inline-block;
 	vertical-align: top;
@@ -285,6 +290,7 @@ header {
 .right-nav-link {
 	display: inline-block;
 	vertical-align: top;
+	color: #575656;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
@@ -345,6 +351,24 @@ header {
     -moz-transform: skew(10deg);
     -o-transform: skew(10deg);
     transform: skew(10deg);
+}
+
+.burger-icon-box {
+	width: 19%;
+	display: none;
+	padding: 13px 0;
+	text-align: right;
+}
+
+.glyphicon-align-justify {
+	font-size: 30px;
+	line-height: 30px;	
+	cursor: pointer;
+	color: #565656;	
+}
+
+.glyphicon-align-justify:before {
+  content: "\e055";
 }
 
 /*-------------------------------------------*/
@@ -680,7 +704,6 @@ header {
 	background-image: url(img/classes_bg.jpg);
 	background-size: cover;
 	background-position: center;
-	width: 100%;
 	padding: 0 0 315px;
 	border-bottom: 1px solid #e8e8e9;
 	font-size: 0;
@@ -896,20 +919,6 @@ header {
 .wrap-up {
 	background-position: 4px -233px;
 }
-
-/*.table-article-box {
-	display: table;
-	padding: 0;
-}
-
-.table-article-row {
-	display: table-row;
-}
-
-.table-article-cell {
-	display: table-cell;
-}
-*/
 
 .article-package {
 	display: inline-block;
@@ -1332,9 +1341,11 @@ header {
 
 .triangle-border {
     overflow: hidden;
+/*    -webkit-box-sizing: border-box;
+    box-sizing: border-box;*/
 }
 
-#left-triangle {
+.left-triangle {
 	display: inline-block;
 	vertical-align: top;
 	width: 0;
@@ -1344,7 +1355,7 @@ header {
 	border-color: #ffffff transparent transparent transparent;
 }
 
-#right-triangle {
+.right-triangle {
 	display: inline-block;
 	vertical-align: top;
 	width: 0;
@@ -1470,7 +1481,7 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	width: 33.33%;
-	padding: 0 15px;
+	padding: 30px 15px 40px 15px;
 }
 
 .news-image {
@@ -1549,7 +1560,7 @@ header {
 	font-family: "Intro-Light", sans-serif;
 	font-size: 46px;
 	line-height: 46px;
-	padding: 65px 0 10px 0;
+	padding: 35px 0 10px 0;
 	font-weight: lighter;
 	text-transform: uppercase;
 }
@@ -1754,7 +1765,7 @@ footer {
 }
 
 .footer-section {
-	padding: 30px 0;
+	padding: 10px 0;
 	background: #eda8b8;
 	font-size: 0;
 	line-height: 0;
@@ -1769,7 +1780,7 @@ footer {
 .footer-contact {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 0 15px;
+	padding: 20px 15px;
 }
 
 .footer-contact:first-child {
@@ -1845,6 +1856,7 @@ footer {
 	vertical-align: middle;
 	width: 16%;
 	text-align: right;
+	padding: 20px 15px;
 }
 
 .facebook-icon,
