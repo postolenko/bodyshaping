@@ -247,7 +247,7 @@ $(document).ready(function() {
 
 
 $(".classes-list").append("<div class='border-classes-list'></div>");
-$(".border-classes-list").css({"height":$(".classes-list").height() - $(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +") ").height()  + "px"});
+$(".border-classes-list").css({"height":$(".classes-list").outerHeight(true) - $(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +") ").height()  + "px"});
 
 // "$(".classes-list").height() - $(".classes-list:eq("+ 2 +")").height());
 
