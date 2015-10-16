@@ -192,7 +192,7 @@ $(document).ready(function() {
 
 			if( countScrollForNav == 1) {
 
-				$("header").css({"background": "rgba(255, 255, 255, .5)"});
+				$("header").css({"background": "rgba(255, 255, 255, .8)"});
 				// $(".logo-parallelogram").css({"height": 100 + "px"});
 				// $(".logo-img").css({"margin-top": 15 + "px"});
 				// $(".right-nav").css({"padding": "14px 10px 14px 25px"});
@@ -244,6 +244,12 @@ $(document).ready(function() {
 
 	}
 
+
+
+$(".classes-list").append("<div class='border-classes-list'></div>");
+$(".border-classes-list").css({"height":$(".classes-list").height() - $(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +") ").height()  + "px"});
+
+// "$(".classes-list").height() - $(".classes-list:eq("+ 2 +")").height());
 
 
 // Navigation scroll
