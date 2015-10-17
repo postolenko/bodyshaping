@@ -41,6 +41,7 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		
+		getScrollToTopBtn();
 		getResponsiveNav();
 
 	});
@@ -245,17 +246,12 @@ $(document).ready(function() {
 	}
 
 
-
-$(".classes-list").append("<div class='border-classes-list'></div>");
-$(".border-classes-list").css({"height":$(".classes-list").outerHeight(true) - $(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +") ").height()  + "px"});
-
-$(window).resize(function() {
-	$(".border-classes-list").css({"height":$(".classes-list").outerHeight(true) - $(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +") ").height()  + "px"});
-
-});
+$(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +")").css({"border-left":"1px solid transparent"});
 
 
 // "$(".classes-list").height() - $(".classes-list:eq("+ 2 +")").height());
+
+
 
 
 // Navigation scroll
@@ -276,6 +272,32 @@ $(window).resize(function() {
 		});
 	});
 
+
+	function getScrollToTopBtn() {
+
+		if ($(window).scrollTop() > $('.head-section').height() ) {
+
+        	$('.scroll-to-top').fadeIn();
+
+        } else {
+
+            $('.scroll-to-top').fadeOut();
+
+        }
+	}
+
+ 
+    $('.scroll-to-top').click(function () {
+
+        $('body,html').animate({
+
+            scrollTop: 0
+
+        }, 1000);
+
+        return false;
+
+    });
 
 
 });

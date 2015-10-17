@@ -777,24 +777,18 @@ header {
 }
 
 .class-box {
-	/*padding: 0 0 25px;*/
+	position: relative;
 }
 
 .class-num-box {
 	position: relative;
 	display: inline-block;
-	vertical-align: top;	
+	vertical-align: top;
+	position: absolute;
+	left: 0;
+	top: 0;
 	width: 7%;
 	z-index: 2;
-}
-
-.class-num-box:after {
-	display: block;
-	content: "";
-	margin: 0 auto;
-	width: 1px;
-	/*height: 100px;*/
-	background: #e3b7c2;
 }
 
 .class-num {
@@ -816,32 +810,13 @@ header {
 	left: -22px;
 }
 
-.line-num {
-	display: block;
-	position: absolute;
-	top: 46px;
-	left: 22px;
-	width: 1px;
-	/*height: 100%;*/
-	background: #e3b7c2;
-}
-
-/*.table-num {
-	display: table;
-	height: 100%;
-}
-
-.classes-row {
-	display: table-row;
-	min-height: 100%;
-}*/
-
 .class-description-name-box {
 	display: inline-block;
 	vertical-align: top;
-	width: 93%;
+	width: 100%;
 	padding: 0 0 25px 14%;
 	text-align: left;
+	border-left: 1px solid #e3b7c2;
 }
 
 .class-name {
@@ -1786,6 +1761,30 @@ footer {
 	background: #eda8b8;
 	font-size: 0;
 	line-height: 0;
+}
+
+.glyphicon-upload {
+	display: inline-block;
+	vertical-align: top;
+	background: #fee5ee;
+	border: 1px solid #ffffff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 5%;
+	right: 2%;
+	font-size: 33px;
+	line-height: 33px;
+	color: #eda8b8;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.glyphicon-upload:before {
+  content: "\e027";
 }
 
 .footer-contacts {

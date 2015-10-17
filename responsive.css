@@ -26,6 +26,10 @@
 		height: 80px;
 	}
 
+	.logo-box {
+		left: 3%;
+	}
+
 	.logo-img {
 		width: 70%;
 		margin-top: 0;
