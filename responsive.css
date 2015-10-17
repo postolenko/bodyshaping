@@ -1,7 +1,7 @@
 @media only screen and (max-width: 968px) {
 
 	.row {
-		padding: 0 1%;
+		padding: 0 2%;
 	}
 
 	.left-nav {
@@ -239,5 +239,39 @@
 		text-align: center;
 	}
 
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	.lenguage-switch-link {
+		font-size: 12px;
+		line-height: 16px;
+		padding: 7px 4px;
+	}
+
+	.get-slim-bg {
+		min-height: 100vh;
+	}
+
+	.get-slim-head {
+		font-size: 43px;
+		line-height: 55px;
+		font-weight: normal;
+	}
+
+	.classes-section-head,
+	.pac-head,
+	.about-us-head,
+	.packages-description-head,
+	.gift-head,
+	.reviews-slider-head {
+		font-size: 39px;
+		line-height: 46px;
+	}
+
+	.tel-num, .email-address {
+		font-size: 15px;
+	}
 
 }
