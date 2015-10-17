@@ -1597,7 +1597,7 @@ header {
 
 .inpt-message {
 	min-height: 190px;
-    width: 90%;
+/*    width: 90%;
 	margin: 13px auto;
     padding: 0px 10% 0 3%;
     font-size: 16px;
@@ -1606,7 +1606,7 @@ header {
     -moz-transform: skew(12deg);
     -o-transform: skew(12deg);
     transform: skew(12deg);
-    border: none;
+    border: none;*/
 }
 
 .sbm-message-btn {
@@ -1714,10 +1714,6 @@ header {
 	background: #eca5bd;
 	border-bottom: 3px solid #eb90ae;
 }*/
-
-
-
-
 
 .glyphicon-user,
 .form-box .glyphicon-envelope,
