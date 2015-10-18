@@ -3,12 +3,13 @@ $(document).ready(function() {
 	$("body").css({"padding-top": $(".head-section").height() + "px"});
 
 	var countScrollForNav = 0;
-
 	var countClearScrollForNav = 0;
 
 	var countRisizeForNav = 0;
-
 	var countClearResizeForNav = 0;
+
+	var countRisizeForPriceList = 0;
+	var countClearRisizeForPriceList = 0;
 
 	var w = window,
 	d = document,
@@ -20,6 +21,9 @@ $(document).ready(function() {
  	var classDescriptions = [];
 
 	getResponsiveNav(bodyWidth);
+	getHeightPriseList(bodyWidth);
+
+	var positionLeftNav = "done";
 
 	$(".left-triangle").css({"border-right-width": $(".row").outerWidth() / 2 + "px"});
 	$(".right-triangle").css({"border-right-width": $(".row").outerWidth() / 2 + "px"});
@@ -34,6 +38,8 @@ $(document).ready(function() {
 
 		getResponsiveNav(bodyWidth);
 
+		getHeightPriseList(bodyWidth);
+
 	});
 
 	$(document).scroll(function() {
@@ -43,14 +49,11 @@ $(document).ready(function() {
 
 	});
 
-
-	$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").outerHeight());
-
  	
 	$(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +")").css({"border-left":"1px solid transparent"});
 
-	var positionLeftNav = "done";
-
+	
+// Show or hide responsive navigation
 	$(".glyphicon-align-justify").click(function() {
 
 		if(positionLeftNav == false) {
@@ -86,7 +89,38 @@ $(document).ready(function() {
 		});
 	});
 
+// Get height of ".prices-list-box .prices-parallelogram" 
+	function getHeightPriseList(bodyWidth) {
 
+		if(bodyWidth >=768) {
+
+			++countRisizeForPriceList;
+
+			if( countRisizeForPriceList == 1) {
+
+				$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").outerHeight());
+
+				countClearRisizeForPriceList = 0;
+
+			}
+
+		} else {
+
+			countRisizeForPriceList = 0;
+
+			++countClearRisizeForPriceList;
+
+			if(countClearRisizeForPriceList == 1) {
+
+				$(".prices-parallelogram").css({"height":"auto"});
+
+			}
+
+		}	
+
+	}
+
+// Responsive of Navigation ".head-section"
 	function getResponsiveNav(bodyWidth) {
 
 		if(bodyWidth < 768 || $(".head-section").offset().top > $(".head-section").height()) {
@@ -145,6 +179,8 @@ $(document).ready(function() {
 
 	}
 
+
+// Show or hide ".scroll-to-top" button 
 	function getScrollToTopBtn() {
 
 		if ($(window).scrollTop() > $('.head-section').height() ) {

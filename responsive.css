@@ -58,6 +58,14 @@
 		display: none;
 	}
 
+
+
+	.prices-head {
+		font-size: 35px;
+	}
+
+
+
 	.footer-contacts {
 		width: 100%;
 		text-align: center;
@@ -223,6 +231,8 @@
 	.buy-now-btn {
 		margin: 10% 0 0 0;
 	}
+
+
 
 	.news-article {
 		width: 100%;
