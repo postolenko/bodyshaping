@@ -176,16 +176,16 @@
 	}
 
 	.prices-parallelogram {
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew(0deg);
-		-o-transform: skew(0deg);
-		transform: skew(0deg);
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
 	.prices-list {
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew0deg);
-		-o-transform: skew0deg);
-		transform: skew0deg);
+		-webkit-transform: none;
+		-moz-transform:none;
+		-o-transform:none;
+		transform:none;
 	}
 
 	.prices-head {
@@ -303,28 +303,28 @@
 	}
 
 	.form-box {
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew(0deg);
-		-o-transform: skew(0deg);
-		transform: skew(0deg);
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
 
 	.inpt-name,
 	.inpt-email,
 	.inpt-message {
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew(0deg);
-		-o-transform: skew(0deg);
-		transform: skew(0deg);
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
 
 	.glyphicon-user,
 	.form-box .glyphicon-envelope,
 	.glyphicon-edit {
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew(0deg);
-		-o-transform: skew(0deg);
-		transform: skew(0deg);
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
 
 	.footer-contact {
