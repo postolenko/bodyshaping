@@ -2,7 +2,7 @@
 	position: relative;
 	top:0; left:0;
 	width: 100%;
-	min-height: 400px;
+	min-height: 310px;
 	z-index: 1;
 	overflow: hidden;
 }
