@@ -23,7 +23,6 @@ $(document).ready(function() {
 
 	$(".left-triangle").css({"border-right-width": $(".row").outerWidth() / 2 + "px"});
 	$(".right-triangle").css({"border-right-width": $(".row").outerWidth() / 2 + "px"});
-// alert("dffdfdfdf");
 
 	$(window).resize(function() {
 
@@ -33,7 +32,7 @@ $(document).ready(function() {
 
 		bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-		getResponsiveNav(bodyWidth);		
+		getResponsiveNav(bodyWidth);
 
 	});
 
@@ -45,7 +44,7 @@ $(document).ready(function() {
 	});
 
 
-	$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").height());
+	$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").outerHeight());
 
  	
 	$(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +")").css({"border-left":"1px solid transparent"});
@@ -172,6 +171,5 @@ $(document).ready(function() {
         return false;
 
     });
-
 
 });

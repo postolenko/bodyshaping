@@ -226,15 +226,15 @@ $(document).ready(function() {
 					// if active is first slide is need to add active class to first switch button
 					$(".slider-num:eq(" + 0 + ")").addClass("bg-slider-num-active");
 					// second slide is need to show
-					$(".slide-" + nextSlider).fadeIn(500);					
+					$(".slide-" + nextSlider).fadeIn(1500);					
 					// previous slide is need to hide 
-					$(".slide-" + countSliders ).fadeOut(500);
+					$(".slide-" + countSliders ).fadeOut(1500);
 
 				} else {
 					// second slide is need to show
-					$(".slide-" + ( nextSlider + 1 ) ).fadeIn(500);
+					$(".slide-" + ( nextSlider + 1 ) ).fadeIn(1500);
 					// previous slide is need to hide 
-					$(".slide-" + nextSlider).fadeOut(500);
+					$(".slide-" + nextSlider).fadeOut(1500);
 
 					++nextSlider;
 
@@ -242,7 +242,7 @@ $(document).ready(function() {
 				// call the slide show function
 				showSlide();
 
-			}, 3000); 
+			}, 9000); 
 
 		} else {
 
