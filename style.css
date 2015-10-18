@@ -922,7 +922,8 @@ header {
 .article-package-head {
 	color: #1a1a18;
 	font-size: 19px;
-	line-height: 65px;
+	line-height: 30px;
+	padding: 20px 0;
 	text-transform: uppercase;
 }
 
@@ -943,7 +944,7 @@ header {
 .article-package-head:after {
 	display: block;
 	content: "";
-	margin: 0 auto;
+	margin: 16px auto 0 auto;
 	width: 32px;
 	height: 1px;
 	background: #f0b7c4;
@@ -976,18 +977,16 @@ header {
 }
 
 .prices-head {
-/*	display: inline-block;
-	vertical-align: top;*/
 	width: 106%;
-	/*margin: 0 0 0 -3%;*/
 	position: relative;
 	top: 0;
 	right: 3%;
+	padding: 40px 0 15px 0;
 	background: #ffffff;
 	color: #575656;
 	font-family: "Intro-Light", sans-serif;
 	font-size: 38px;
-	line-height: 80px;
+	line-height: 50px;
 	font-weight: lighter;
 	text-transform: uppercase;
 	-webkit-transform: skew(12deg);
