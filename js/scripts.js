@@ -32,10 +32,8 @@ $(document).ready(function() {
 
 		getResponsiveNav();
 		bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
-		// getHeightPriceList();
-		$("body").css({"padding-top": $(".head-section").height() + "px"});
 
-		
+		$("body").css({"padding-top": $(".head-section").height() + "px"});		
 
 	});
 
@@ -62,9 +60,6 @@ $(document).ready(function() {
 			positionLeftNav = false;
 
 		}
-		
-
-
 
 	});
 
@@ -102,54 +97,12 @@ $(document).ready(function() {
 
  	var countClassDescription = 0;
  	var classDescriptions = [];
- 	// var br=this.getBoundingClientRect();
-	// alert("Top:"+br.top+", Left:"+br.left+", Right:"+br.right+", Bottom:"+br.bottom);
-
-
-	// // console.log($(".prices-list-box").length);
- 	for(countClassDescription = 0; countClassDescription <= $(".class-box").length - 1; countClassDescription++ ) {
-
- 		// classDescriptions.push($(".prices-list-box:eq("+ countClassDescription +")").height());
- 		// $(".line-num:eq(" + countClassDescription + ")").css({"height": $(".class-box:eq(" + countClassDescription + ")").outerHeight() - $(".class-num:eq(" + countClassDescription + ")").height()  + "px"});
-
- 		// $(".line-num:eq(" + countClassDescription + ")").css({"height": $(".class-num:eq(" + (countClassDescription + 1) + ")").offset().top - $(".class-num:eq(" + countClassDescription + ")").offset().top - $(".class-num:eq(" + countClassDescription + ")").height() + "px"});
-
- 		// document.getElementsByClassName("class-box")[countClassDescription] = this.getBoundingClientRect();
- 		// console.log(document.getElementsByClassName("class-box")[countClassDescription].top);
- 		var secondCounter = countClassDescription + 1;
- 		// var heightLine = document.getElementsByClassName("class-box")[secondCounter].offsetTop - document.getElementsByClassName("class-box")[countClassDescription].offsetTop - document.getElementsByClassName("class-box")[countClassDescription].offsetHeight;
-
- 		 // var heightLine = document.getElementsByClassName("class-box")[secondCounter].offsetTop - document.getElementsByClassName("class-box")[countClassDescription].offsetTop - document.getElementsByClassName("class-box")[countClassDescription].offsetHeight;
-
-
- 		// $(".line-num:eq(" + countClassDescription + ")").css({"height": heightLine + "px"});
-
- 		// console.log($(".class-box").length + "  " +countClassDescription +"  "+document.getElementsByClassName("class-box")[countClassDescription].offsetTop);
-
- 		if( countClassDescription == $(".class-box").length - 1 ) {
-
- 			 $(".line-num:eq(" + countClassDescription + ")").css({"display": "none"});
-
- 		}
-
- 	}
-
-
- 	// $(".prices-list-box .prices-list").css({"height": Math.max.apply(Math,pricesListArticles) + "px"});
- 	// console.log(pricesListArticles);
- 	// console.log(Math.max.apply(Math,pricesListArticles)+" "+pricesListArticles.indexOf(Math.max.apply(Math,pricesListArticles)));
-
-
-	// $(".line-num").css({"height": $(".class-description-name-box").height()  + "px"});
-
-
 	
 
 	function getHeightPriceList() {
 
 		if(bodyWidth > 768) {		
 
-			// console.log($(".prices-list-box").length);
 		 	for(countPriceList = 0; countPriceList <= $(".prices-list-box .prices-list").length - 1; countPriceList++ ) {
 
 		 		pricesListArticles.push($(".prices-list-box:eq("+ countPriceList +")").height());
@@ -157,102 +110,55 @@ $(document).ready(function() {
 		 	}
 
 		 	$(".prices-list-box .prices-list").css({"height": Math.max.apply(Math,pricesListArticles) + "px"});
-		 	// console.log(pricesListArticles);
-		 	// console.log(Math.max.apply(Math,pricesListArticles)+" "+pricesListArticles.indexOf(Math.max.apply(Math,pricesListArticles)));
-
 		}
 
 	}
  
 
 
-
- 	// $(window).resize(function() {
- 	// 	$("#left-triangle").css({"border-right-width": $(".row").width() / 2 + "px"});
-		// $("#right-triangle").css({"border-right-width": $(".row").width() / 2 + "px"});
- 	// });
-
-
-
-
-
-	// var halfRow = $(".gift-box").width() / 2 + "px";
-
-	// document.getElementById("left-triangle").style.borderWidth = "25px"+ halfRow + "0 0";
-
-	// console.log(halfRow);
-
-
 		function getResponsiveNav() {
 
-		// console.log($(".head-section").offset().top);
+			if(bodyWidth < 768 || $(".head-section").offset().top > $(".head-section").height()) {
 
-		if($(".head-section").offset().top > $(".head-section").height()) {
-			
-			++countScrollForNav;
+				$(".logo-parallelogram").css({"height": 80 + "px"});
+				$(".logo-img").css({"margin-top": 5 + "px"});
 
-			if( countScrollForNav == 1) {
+			} else {
 
-				$("header").css({"background": "rgba(255, 255, 255, .8)"});
-				// $(".logo-parallelogram").css({"height": 100 + "px"});
-				// $(".logo-img").css({"margin-top": 15 + "px"});
-				// $(".right-nav").css({"padding": "14px 10px 14px 25px"});
-
-				// if( bodyWidth < 968 ) {
-
-					$(".logo-parallelogram").css({"height": 80 + "px"});
-					$(".logo-img").css({"margin-top": 5 + "px"});
-
-				// } 
-				// else {
-
-				// 	$(".logo-parallelogram").css({"height": 130 + "px"});
-				// 	$(".logo-img").css({"margin-top": 15 + "px"});
-
-				// }
-				countClearScrollForNav = 0;
-
+				$(".logo-parallelogram").css({"height": 130 + "px"});
+				$(".logo-img").css({"margin-top": 35 + "px"});
 
 			}
 
-		} else {
+			if($(".head-section").offset().top > $(".head-section").height()) {
+				
+				++countScrollForNav;
 
+				if( countScrollForNav == 1) {
 
-			countScrollForNav = 0;
-			++countClearScrollForNav;
+					$("header").css({"background": "rgba(255, 255, 255, .8)"});
 
-			if(countClearScrollForNav == 1) {
+					countClearScrollForNav = 0;
 
-				$("header").css({"background": "rgba(255, 255, 255, 1)"});
+				}
 
-				// if( bodyWidth < 968 ) {
+			} else {
 
-				// 	$(".logo-parallelogram").css({"height": 70 + "px"});
-				// 	$(".logo-img").css({"margin-top": 0 + "px"});
+				countScrollForNav = 0;
+				++countClearScrollForNav;
 
-				// } else {
+				if(countClearScrollForNav == 1) {
 
-					$(".logo-parallelogram").css({"height": 130 + "px"});
-					$(".logo-img").css({"margin-top": 35 + "px"});
+					$("header").css({"background": "rgba(255, 255, 255, 1)"});
 
-				// }
+				}
 
-				// $(".right-nav").css({"padding": "24px 10px 24px 25px"});
-			
 			}
-
-		}
 
 	}
 
 
 $(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +")").css({"border-left":"1px solid transparent"});
-
-
-// "$(".classes-list").height() - $(".classes-list:eq("+ 2 +")").height());
-
-
-
 
 // Navigation scroll
 
