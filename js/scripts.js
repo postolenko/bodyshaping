@@ -45,7 +45,6 @@ $(document).ready(function() {
 	});
 
 
-
 	$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").height());
 
  	

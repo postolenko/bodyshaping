@@ -906,6 +906,10 @@ header {
 	padding: 25px 0;
 }
 
+.article-box-row {
+	display: table-row;
+}
+
 .aticle-box {
 	display: table;
 }
