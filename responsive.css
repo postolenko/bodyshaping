@@ -275,6 +275,16 @@
 		padding: 20px 10px;
 	}
 
+	.reviews-slider {
+		padding: 30px 0 0 0;
+	}
+
+	.reviews-slider-head {
+		padding: 0 0 17px 0;
+	}
+
+
+
 	.contacts-preview {
 		font-size: 15px;
 	}
