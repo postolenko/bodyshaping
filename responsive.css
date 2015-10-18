@@ -191,10 +191,6 @@
 	.prices-head {
 		width: 100%;
 		right: 0;
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew(0deg);
-		-o-transform: skew(0deg);
-		transform: skew(0deg);
 	}
 
 

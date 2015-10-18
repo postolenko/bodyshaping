@@ -43,6 +43,7 @@ $(document).ready(function() {
 
 	});
 
+	$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").outerHeight(true));
  	
 	$(".class-description-name-box:eq("+ ($(".class-description-name-box").length - 1) +")").css({"border-left":"1px solid transparent"});
 
