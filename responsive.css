@@ -315,6 +315,10 @@
 		transform: skew(0deg);
 	}
 
+	.footer-contact {
+		padding: 20px 5px;
+	}
+
 	.glyphicon-earphone,
 	.footer-contacts .glyphicon-envelope {
 		margin: 0 10px 0 0;
@@ -323,5 +327,7 @@
 	.tel-num, .email-address {
 		font-size: 16px;
 	}
+
+
 
 }
