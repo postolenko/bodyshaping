@@ -946,7 +946,7 @@ header {
 .prices-parallelogram {
 	display: inline-block;
 	vertical-align: top;
-	height: 100%;
+	min-height: 100%;
 	margin: 0 3%;
 	background: #f0f1f2;
 	text-align: center;
