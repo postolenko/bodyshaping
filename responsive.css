@@ -95,6 +95,7 @@
 	}
 
 	.get-slim-head {
+		font-size: 60px;
 		line-height: 85px;
 	}
 
@@ -158,12 +159,19 @@
 		padding: 3% 0;
 	}
 
+	.aticle-box {
+		display: block;
+	}
 
-	.article-package {
-		width: 100%;
+	.aticle-box > div,
+	.aticle-box > noindex > div {
+		display: inline-block;
+		vertical-align: top;
 	}
 
 	.prices-list-box {
+		display: inline-block;
+		vertical-align: top;
 		width: 100%;
 	}
 
@@ -180,10 +188,16 @@
 		transform: skew0deg);
 	}
 
-
 	.prices-head {
-		margin: 0 0 0 0; 
+		width: 100%;
+		right: 0;
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		transform: skew(0deg);
 	}
+
+
 
 
 	.gift-img-box {
