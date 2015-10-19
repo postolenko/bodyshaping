@@ -38,22 +38,21 @@
 /*-- Icon Fonts --*/
 
 @font-face {
-  font-family: 'Glyphicons Halflings';
-
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-		  url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), 
-		  url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
-		  url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
-		  url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+	font-family: 'Glyphicons Halflings';
+	src: url('fonts/glyphicons-halflings-regular.eot');
+	src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), 
+		 url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
+		 url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+		 url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 .glyphicon {
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -197,14 +196,14 @@ header {
     transition-timing-function: ease;
 }
 
-.link-parallelogram:hover,
-.link-parallelogram:active {
-	background: #dededd;
-}
-
 .link-parallelogram:link,
 .link-parallelogram:visited {
 	background: none;
+}
+
+.link-parallelogram:hover,
+.link-parallelogram:active {
+	background: #dededd;
 }
 
 .left-nav-link {
@@ -342,7 +341,7 @@ header {
 }
 
 .lenguage-switch-link:link,
-.lenguage-switch-link:visited {
+.lenguage-switch-link:visited { 
 	color: #575656;
 }
 
@@ -428,7 +427,7 @@ header {
 .learn-more-btn {
 	display: inline-block;
 	vertical-align: top;
-	
+	color: #1a1a18;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
@@ -436,7 +435,7 @@ header {
 	padding: 20px 30px;
 	background: #eca5bd;
 	border-top: 1px solid #e5afc2;
-	
+	border-bottom: 3px solid #eb90ae;
 
 	-webkit-transition-property: background border;
     -webkit-transition-duration: 0.3s;
@@ -460,8 +459,8 @@ header {
 }
 
 .learn-more-btn:link,
-.learn-more-btn:visited {
-	color: #1a1a18;
+.learn-more-btn:visited { 
+	background: #eca5bd;
 	border-bottom: 3px solid #eb90ae;
 }
 
@@ -545,6 +544,7 @@ header {
 	background: #ffffff;
 	margin: 0 0 60px 0;
 	padding: 17px 25px;
+	color: #575656;
 	font-size: 13px;
 	line-height: 13px;
 	text-transform: uppercase;
@@ -1059,6 +1059,7 @@ header {
 	background: #ffffff;
 	margin: 20px 0 0 0;
 	padding: 17px 33px;
+	color: #575656;
 	font-size: 13px;
 	line-height: 13px;
 	text-transform: uppercase;
@@ -1091,7 +1092,7 @@ header {
 
 .contacts-btn:link,
 .contacts-btn:visited {
-	color: #575656;
+    color: #575656;
 }
 
 .contacts-btn:hover,
@@ -1149,7 +1150,6 @@ header {
 	box-shadow: 0px 0px 70px 0px rgba(0,0,0,.4);
 }
 
-
 .gift-img-box {
 	display: inline-block;
 	vertical-align: top;
@@ -1194,12 +1194,14 @@ header {
 .buy-now-btn {
 	display: inline-block;
 	vertical-align: top;
+	color: #1a1a18;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
 	margin: 70px 0 0 0;
 	padding: 20px 40px;
-	background: #eca5bd;
+	background: #eca5bd;	
+	border-bottom: 3px solid #eb90ae;
 
 	-webkit-transition-property: background border;
     -webkit-transition-duration: 0.3s;
@@ -1224,7 +1226,7 @@ header {
 
 .buy-now-btn:link,
 .buy-now-btn:visited {
-	color: #1a1a18;
+	background: #eca5bd;
 	border-bottom: 3px solid #eb90ae;
 }
 
@@ -1563,12 +1565,12 @@ header {
 
 .sbm-message-btn:link,
 .sbm-message-btn:visited {
-	color: #fefefe;
-	background: #aaa9a9;
+	color: #1a1a18;
+	background: #cacac9;
 	border-top: 1px solid #d7d7d6;
 	border-right: 1px solid #d7d7d6;
 	border-left: 1px solid #d7d7d6;
-	border-bottom: 3px solid #969594;
+	border-bottom: 3px solid #aaa9a9;
 }
 
 .sbm-message-btn:hover,
@@ -1584,6 +1586,7 @@ header {
 .glyphicon-arrow-right {
 	display: inline-block;
 	vertical-align: middle;
+	color: #060404;
 	width: 15px;
 	height: 15px;
 	margin: 0 20px 0px 0;
@@ -1591,6 +1594,7 @@ header {
 	line-height: 11px;
 	font-weight: bold;
 	text-align: center;
+	border: 2px solid #060404;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -1732,6 +1736,9 @@ footer {
 .email-address {
 	display: inline-block;
 	vertical-align: middle;	
+	font-size: 20px;
+	line-height: 20px;
+	color: #575656;
 
 	-webkit-transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -1752,12 +1759,6 @@ footer {
     transition-property: color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
-}
-
-.tel-num,
-.email-address {
-	font-size: 20px;
-	line-height: 20px;
 }
 
 .tel-num:link,
@@ -1811,7 +1812,7 @@ footer {
 	background-image: url(img/sprite_icon.png);
 	background-size: 49%;
 	background-repeat: no-repeat;
-
+	background-color: #ffffff;
 	-webkit-transition-property: background-color;
     -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: ease;
