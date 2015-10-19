@@ -167,7 +167,7 @@
 		padding: 3% 0;
 	}
 
-	.aticle-box {
+	.article-box {
 		display: block;
 	}
 
@@ -175,25 +175,9 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 100%;
-	}
-
-	.prices-parallelogram {
-		-webkit-transform: none;
-		-moz-transform: none;
-		-o-transform: none;
-		transform: none;
-	}
-	.prices-list {
-		-webkit-transform: none;
-		-moz-transform:none;
-		-o-transform:none;
-		transform:none;
-	}
-
-	.prices-head {
-		width: 100%;
-		right: 0;
-		margin: 0;
+		background: #f0f1f2;
+		margin: 20px 0;
+		flex: none;
 	}
 
 
@@ -268,11 +252,8 @@
 		font-weight: normal;
 	}
 
-	.prices-parallelogram {
-		margin: 0;
-	}
-
 	.prices-list {
+		margin: 0;
 		padding: 20px 10px;
 	}
 

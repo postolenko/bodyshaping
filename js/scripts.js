@@ -8,9 +8,6 @@ $(document).ready(function() {
 	var countRisizeForNav = 0;
 	var countClearResizeForNav = 0;
 
-	var countRisizeForPriceList = 0;
-	var countClearRisizeForPriceList = 0;
-
 	var w = window,
 	d = document,
 	e = d.documentElement,
@@ -22,7 +19,6 @@ $(document).ready(function() {
 
 	getResponsiveNav(bodyWidth);
 	getScrollToTopBtn();
-	getHeightPriseList(bodyWidth);
 
 	var positionLeftNav = "done";
 
@@ -38,8 +34,6 @@ $(document).ready(function() {
 		bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 		getResponsiveNav(bodyWidth);
-
-		getHeightPriseList(bodyWidth);
 
 	});
 
@@ -90,36 +84,7 @@ $(document).ready(function() {
 		});
 	});
 
-// Get height of ".prices-list-box .prices-parallelogram" 
-	function getHeightPriseList(bodyWidth) {
 
-		if(bodyWidth >=768) {
-
-			++countRisizeForPriceList;
-
-			if( countRisizeForPriceList == 1) {
-
-				$(".prices-parallelogram").height($(".prices-list-box").height() - $(".prices-head").outerHeight());
-
-				countClearRisizeForPriceList = 0;
-
-			}
-
-		} else {
-
-			countRisizeForPriceList = 0;
-
-			++countClearRisizeForPriceList;
-
-			if(countClearRisizeForPriceList == 1) {
-
-				$(".prices-parallelogram").css({"height":"auto"});
-
-			}
-
-		}	
-
-	}
 
 // Responsive of Navigation ".head-section"
 	function getResponsiveNav(bodyWidth) {
