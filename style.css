@@ -321,13 +321,6 @@ header {
 	margin-right: 0;
 }
 
-.leng-parallelogram {
-	-webkit-transform: skew(-10deg);
-    -moz-transform: skew(-10deg);
-    -o-transform: skew(-10deg);
-    transform: skew(-10deg);    
-}
-
 .active {	
 	background: #dededd;
 }
@@ -335,6 +328,7 @@ header {
 .lenguage-switch-link {
 	display: inline-block;
 	vertical-align: top;
+	color: #575656;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
@@ -345,6 +339,16 @@ header {
     -moz-transform: skew(10deg);
     -o-transform: skew(10deg);
     transform: skew(10deg);
+}
+
+.lenguage-switch-link:link,
+.lenguage-switch-link:visited {
+	color: #575656;
+}
+
+.lenguage-switch-link:hover,
+.lenguage-switch-link:active { 
+	color: #575656;
 }
 
 .burger-icon-box {
@@ -368,6 +372,14 @@ header {
 /*-------------------------------------------*/
 /* ----- GET SLIM IN SINGAPORE SECTION ----- */
 /*-------------------------------------------*/
+
+.head-first {
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: -1;
+	opacity: .01;
+}
 
 .get-slim-bg {
 	background-image: url(img/get_slim_bg.jpg);
@@ -416,7 +428,7 @@ header {
 .learn-more-btn {
 	display: inline-block;
 	vertical-align: top;
-	color: #1a1a18;
+	
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
@@ -424,7 +436,7 @@ header {
 	padding: 20px 30px;
 	background: #eca5bd;
 	border-top: 1px solid #e5afc2;
-	border-bottom: 3px solid #eb90ae;
+	
 
 	-webkit-transition-property: background border;
     -webkit-transition-duration: 0.3s;
@@ -447,8 +459,14 @@ header {
     transition-timing-function: ease;
 }
 
+.learn-more-btn:link,
+.learn-more-btn:visited {
+	color: #1a1a18;
+	border-bottom: 3px solid #eb90ae;
+}
+
 .learn-more-btn:hover,
-.learn-more-btn:active {
+.learn-more-btn:active { 
 	background: #f283a8;
 	border-bottom: 3px solid #db638b;
 }
@@ -525,7 +543,6 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	background: #ffffff;
-	color: #575656;
 	margin: 0 0 60px 0;
 	padding: 17px 25px;
 	font-size: 13px;
@@ -558,6 +575,16 @@ header {
     transition-timing-function: ease;
 }
 
+.frt-cl-btn:link,
+.frt-cl-btn:visited {
+	color: #575656;
+}
+
+.frt-cl-btn:hover,
+.frt-cl-btn:active {
+	color: #eb8dac;
+}
+
 .glyphicon-ok {
 	display: inline-block;
 	vertical-align: middle;
@@ -566,11 +593,6 @@ header {
 
 .glyphicon-ok:before {
 	content: "\e013";
-}
-
-.frt-cl-btn:hover,
-.frt-cl-btn:active {
-	color: #eb8dac;
 }
 
 .frst-class-btn-link {
@@ -1035,49 +1057,6 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	background: #ffffff;
-	font-size: 13px;
-	line-height: 13px;
-	color: #575656;
-	text-transform: uppercase;
-	margin: 20px 0 0 0;
-	padding: 17px 33px;
-	border-top: 1px solid #f8dde3;
-	border-left: 1px solid #f8dde3;
-	border-right: 1px solid #f8dde3;
-	border-bottom: 3px solid #dededd;
-
-	-webkit-transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color;
-    -ms-transition-duration: 0.3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color;
-    -o-transition-duration: 0.3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-}
-
-.contacts-btn:hover,
-.contacts-btn:active {
-	color: #eb8dac;
-}
-
-
-.contacts-btn {
-	display: inline-block;
-	vertical-align: top;
-	background: #ffffff;
-	color: #575656;
 	margin: 20px 0 0 0;
 	padding: 17px 33px;
 	font-size: 13px;
@@ -1110,6 +1089,16 @@ header {
     transition-timing-function: ease;
 }
 
+.contacts-btn:link,
+.contacts-btn:visited {
+	color: #575656;
+}
+
+.contacts-btn:hover,
+.contacts-btn:active {
+    color: #eb8dac;
+}
+
 .glyphicon-ok {
 	display: inline-block;
 	vertical-align: middle;
@@ -1118,11 +1107,6 @@ header {
 
 .glyphicon-ok:before {
 	content: "\e013";
-}
-
-.contacts-btn:hover,
-.contacts-btn:active {
-	color: #eb8dac;
 }
 
 .contacts-btn-link {
@@ -1210,15 +1194,12 @@ header {
 .buy-now-btn {
 	display: inline-block;
 	vertical-align: top;
-	color: #1a1a18;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
 	margin: 70px 0 0 0;
 	padding: 20px 40px;
 	background: #eca5bd;
-	border-top: 1px solid #e5afc2;
-	border-bottom: 3px solid #eb90ae;
 
 	-webkit-transition-property: background border;
     -webkit-transition-duration: 0.3s;
@@ -1239,6 +1220,12 @@ header {
     transition-property: background border;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+}
+
+.buy-now-btn:link,
+.buy-now-btn:visited {
+	color: #1a1a18;
+	border-bottom: 3px solid #eb90ae;
 }
 
 .buy-now-btn:hover,
@@ -1380,11 +1367,9 @@ header {
 /* ----- NEWS  QUESTIONS------ */
 /*-------------------------------------------*/
 
-/* ----- NEWS ------ */
-
 .news-section {
 	background: #ffffff;
-	padding: 60px 0;
+	padding: 60px 0 10px 0;
 	font-size: 0;
 	line-height: 0;
 	text-align: center;
@@ -1474,10 +1459,18 @@ header {
 	line-height: 21px;
 }
 
+/*-------------------------------------------*/
 /* ----- QUESTIONS ------ */
+/*-------------------------------------------*/
 
 .questions-section {
-	
+	background: #ffffff;
+	padding: 43px 0 105px 0;
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+	overflow: hidden;
+	/*because of parallelogramm in form of submit*/
 }
 
 .questions-head {
@@ -1485,7 +1478,7 @@ header {
 	font-family: "Intro-Light", sans-serif;
 	font-size: 46px;
 	line-height: 46px;
-	padding: 35px 0 10px 0;
+	padding: 0 0 10px 0;
 	font-weight: lighter;
 	text-transform: uppercase;
 }
@@ -1535,12 +1528,12 @@ header {
 .sbm-message-btn {
 	display: inline-block;
 	vertical-align: top;
-	color: #1a1a18;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
-	margin: 15px 0 65px 0;
+	margin: 15px 0;
 	padding: 20px 45px;
+	color: #1a1a18;
 	background: #cacac9;
 	border-top: 1px solid #d7d7d6;
 	border-right: 1px solid #d7d7d6;
@@ -1566,6 +1559,26 @@ header {
     transition-property: color background border;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+}
+
+.sbm-message-btn:link,
+.sbm-message-btn:visited {
+	color: #fefefe;
+	background: #aaa9a9;
+	border-top: 1px solid #d7d7d6;
+	border-right: 1px solid #d7d7d6;
+	border-left: 1px solid #d7d7d6;
+	border-bottom: 3px solid #969594;
+}
+
+.sbm-message-btn:hover,
+.sbm-message-btn:active {
+	color: #fefefe;
+	background: #aaa9a9;
+	border-top: 1px solid #d7d7d6;
+	border-right: 1px solid #d7d7d6;
+	border-left: 1px solid #d7d7d6;
+	border-bottom: 3px solid #969594;
 }
 
 .glyphicon-arrow-right {
@@ -1609,16 +1622,16 @@ header {
 	content: "\e092";
 }
 
-.sbm-message-btn:hover .glyphicon-arrow-right,
-.sbm-message-btn:active .glyphicon-arrow-right{
-	color: #fefefe;
-	border: 2px solid #fefefe;
-}
-
 .sbm-message-btn:link .glyphicon-arrow-right,
 .sbm-message-btn:visited .glyphicon-arrow-right{
 	color: #060404;
 	border: 2px solid #060404;
+}
+
+.sbm-message-btn:hover .glyphicon-arrow-right,
+.sbm-message-btn:active .glyphicon-arrow-right{
+	color: #fefefe;
+	border: 2px solid #fefefe;
 }
 
 .sbm-message-btn-link {
@@ -1626,15 +1639,6 @@ header {
 	vertical-align: middle;
 }
 
-.sbm-message-btn:hover,
-.sbm-message-btn:active {
-	color: #fefefe;
-	background: #aaa9a9;
-	border-top: 1px solid #d7d7d6;
-	border-right: 1px solid #d7d7d6;
-	border-left: 1px solid #d7d7d6;
-	border-bottom: 3px solid #969594;
-}
 
 .glyphicon-user,
 .form-box .glyphicon-envelope,
@@ -1727,8 +1731,7 @@ footer {
 .tel-num,
 .email-address {
 	display: inline-block;
-	vertical-align: middle;
-	color: #575656;
+	vertical-align: middle;	
 
 	-webkit-transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -1755,6 +1758,13 @@ footer {
 .email-address {
 	font-size: 20px;
 	line-height: 20px;
+}
+
+.tel-num:link,
+.email-address:link,
+.tel-num:visited,
+.email-address:visited {
+	color: #575656;
 }
 
 .tel-num:hover,
@@ -1797,7 +1807,6 @@ footer {
 	height: 30px;
 	padding: 10px 0 4px 0;
 	margin: 0 7px;
-	background-color: #ffffff;
 	position: relative;
 	background-image: url(img/sprite_icon.png);
 	background-size: 49%;
@@ -1822,6 +1831,13 @@ footer {
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+}
+
+.facebook-icon:link,
+.instagram-icon:link,
+.facebook-icon:visited,
+.instagram-icon:visited {
+	background-color: #ffffff;
 }
 
 .facebook-icon:hover,

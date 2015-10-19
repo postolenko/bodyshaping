@@ -21,6 +21,7 @@ $(document).ready(function() {
  	var classDescriptions = [];
 
 	getResponsiveNav(bodyWidth);
+	getScrollToTopBtn();
 	getHeightPriseList(bodyWidth);
 
 	var positionLeftNav = "done";
