@@ -17,7 +17,10 @@
 
 @font-face {
   font-family: 'Lusitana';
-  src: url('Lusitana.eot?#iefix') format('embedded-opentype'),  url('Lusitana.woff') format('woff'), url('Lusitana.ttf')  format('truetype'), url('Lusitana.svg#Lusitana') format('svg');
+  src: url('fonts/Lusitana.eot?#iefix') format('embedded-opentype'),  
+	   url('fonts/Lusitana.woff') format('woff'), 
+	   url('fonts/Lusitana.ttf')  format('truetype'), 
+	   url('fonts/Lusitana.svg#Lusitana') format('svg');
   font-weight: normal;
   font-style: normal;
 }
