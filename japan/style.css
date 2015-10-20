@@ -5,14 +5,13 @@
 /*------------------*/
 
 @font-face {
-	font-family: 'MicrosoftYaHei';
-	src: url('fonts/chinese.msyh.eot');
-	src: url('fonts/chinese.msyh.eot') format('embedded-opentype'),
-    	 url('fonts/chinese.msyh.woff') format('woff'),
-    	 url('fonts/chinese.msyh.ttf') format('truetype'),
-         url('fonts/chinese.msyh.svg#MicrosoftYaHei') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'KaoriGel';
+  src: url('fonts/KaoriGel.eot?#iefix') format('embedded-opentype'),  
+  url('fonts/KaoriGel.woff') format('woff'), 
+  url('fonts/KaoriGel.ttf')  format('truetype'), 
+  url('fonts/KaoriGel.svg#KaoriGel') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*-- Icon Fonts --*/
@@ -51,7 +50,7 @@
 html {
     background-color: #ffffff;
     color: #000000;
-    font-family: 'MicrosoftYaHei', sans-serif;
+    font-family: 'KaoriGel', sans-serif;
     font-size: 21px;
     font-weight: normal;
 }
@@ -192,7 +191,7 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	color: #575656;
-	font-family: 'MicrosoftYaHei', sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
 	font-weight: normal;
@@ -266,7 +265,7 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	color: #575656;
-	font-family: 'MicrosoftYaHei', sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
 	font-weight: normal;
@@ -310,7 +309,7 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	color: #575656;
-	font-family: 'MicrosoftYaHei', sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 15px;
 	line-height: 16px;
 	font-weight: normal;
@@ -384,7 +383,7 @@ header {
 	vertical-align: top;
 	width: 100%;
 	color: #1a1a18;
-	font-family: 'MicrosoftYaHei', sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 68px;
 	line-height: 75px;	
 	font-weight: lighter;
@@ -508,7 +507,7 @@ header {
 .frt-cl-head {
 	display: inline-block;
 	vertical-align: top;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: "KaoriGel", sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	font-weight: lighter;
@@ -636,7 +635,7 @@ header {
 }
 
 .about-us-head {
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: "KaoriGel", sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	font-weight: lighter;
@@ -705,7 +704,7 @@ header {
 
 .classes-section-head {
 	color: #ffffff;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	font-weight: lighter;
@@ -831,7 +830,7 @@ header {
 
 .pac-head {
 	color: #ffffff;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	font-weight: lighter;
@@ -845,7 +844,7 @@ header {
 
 .packages-description-head {
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 38px;
 	line-height: 138px;
 	font-weight: lighter;
@@ -929,7 +928,7 @@ header {
 	width: 100%;
 	background: #ffffff;
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 38px;
 	line-height: 50px;
 	font-weight: lighter;
@@ -984,7 +983,7 @@ header {
 
 .contancts-head {
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 38px;
 	line-height: 38px;
 	font-weight: lighter;
@@ -1149,7 +1148,7 @@ header {
 
 .gift-head {
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 38px;
 	line-height: 38px;
 	font-weight: lighter;
@@ -1270,7 +1269,7 @@ header {
 
 .reviews-slider-head {
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	padding: 0 0 40px 0;
@@ -1356,7 +1355,7 @@ header {
 
 .news-head {
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	padding: 0 0 55px 0;
@@ -1452,7 +1451,7 @@ header {
 
 .questions-head {
 	color: #575656;
-	font-family: "MicrosoftYaHei", sans-serif;
+	font-family: 'KaoriGel', sans-serif;
 	font-size: 46px;
 	line-height: 46px;
 	padding: 10px 0;
