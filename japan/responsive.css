@@ -147,7 +147,7 @@
 		margin: -55px 0 0 0;
 	}
 	.classes-section-head {
-		padding: 50px 52px 27px 31px;
+		padding: 50px 20px 27px 10px;
 	}
 
 	.classes-content {
@@ -263,6 +263,14 @@
 		padding: 0 0 17px 0;
 	}
 
+	.for-slider {
+		min-height: 400px;
+	}
+
+	.customer-review {
+		font-size: 14px;
+		line-height: 20px;
+	}
 
 
 	.contacts-preview {

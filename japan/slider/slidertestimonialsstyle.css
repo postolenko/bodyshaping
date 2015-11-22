@@ -40,3 +40,11 @@
 .bg-slider-num-active {
 	background: #f0b7c4;
 }
+
+@media only screen and (max-width: 480px) {
+	
+	.for-slider {
+		min-height: 400px;
+	}
+
+}
