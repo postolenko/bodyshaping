@@ -242,7 +242,7 @@ $(document).ready(function() {
 				// call the slide show function
 				showSlide();
 
-			}, 9000); 
+			}, 9000000); 
 
 		} else {
 
